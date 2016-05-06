@@ -5,11 +5,20 @@ echo "*******************Cleaning tools******************"
 cd ~/hipi
 gradle clean tools:hibImport:jar
 
+echo "*******************Downloading data******************"
+cd ~/
+wget http://149.165.159.58/data/FG491/hdhumal/INRIAPerson.tar
+tar -xvf ~/INRIAPerson.tar
+
 echo
 echo
 echo "*******************Building tools******************"
 cd ~/hipi/tools
 gradle hibImport:jar
+
+
+echo
+echo
 
 echo
 echo
