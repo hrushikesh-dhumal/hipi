@@ -30,7 +30,7 @@ echo "*******************Configuring hadoop**************"
 hdfs dfs -rm -r /input
 hdfs dfs -rm -r sampleimages_average
 hdfs dfs -mkdir /input
-sh ~/hipi/tools/hibImport.sh ~/hipi/testdata/testimages/ /input/sampleimages.hib
+sh ~/hipi/tools/hibImport.sh ~/INRIAPerson/Train/pos/ /input/sampleimages.hib
 
 echo
 echo
